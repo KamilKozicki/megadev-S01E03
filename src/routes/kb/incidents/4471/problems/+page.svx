@@ -2,8 +2,8 @@
 layout: runbook
 title: '#4471 · problems hidden by the merge'
 owner: KamilKozicki
-status: proposed
-reviewed: 2026-10-29
+status: closed
+reviewed: 2026-10-05
 signature: KamilKozicki
 ---
 
@@ -18,6 +18,13 @@ counts below deduplicate reports by ID before grouping them by tenant locale, bo
 report channel.
 
 <CauseTable ticket={4471} />
+
+## Engineering update
+
+Ticket #4471 closed on 5 October.
+
+- **parser — FIXED.** `fix(dates): parse dd/mm for eu locales`
+- **hint — WON'T FIX.** The `booking-v3` form was retired.
 
 ## Shared parser
 

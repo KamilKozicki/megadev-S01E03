@@ -31,7 +31,7 @@
   <header>
     <a class="crumb" href="../../../../">support desk · kb</a>
     <h1>#4471 · problems hidden by the merge</h1>
-    <p class="meta"><span>owner <b>KamilKozicki</b></span><span class="status">proposed</span><span>reviewed 2026-10-29</span></p>
+    <p class="meta"><span>owner <b>KamilKozicki</b></span><span class="status">closed</span><span>reviewed 2026-10-05</span></p>
   </header>
   <main>
     <p>Ticket #4471 contains two problems, not one. The ticket export overlaps between pages, so the counts below deduplicate reports by ID before grouping them by tenant locale, booking form, and report channel.</p>
@@ -44,6 +44,12 @@
       </tbody>
     </table>
     <p class="note">5 reports read as a one-day move; filed under <code>parser</code> by tenant.</p>
+    <h2>Engineering update</h2>
+    <p>Ticket #4471 closed on 5 October.</p>
+    <ul>
+      <li><strong>parser — FIXED.</strong> <code>fix(dates): parse dd/mm for eu locales</code></li>
+      <li><strong>hint — WON'T FIX.</strong> The <code>booking-v3</code> form was retired.</li>
+    </ul>
     <h2>Shared parser</h2>
     <p>The shared parser reads every date month first. The affected tenants write the day first, so valid local dates are interpreted with the month and day reversed.</p>
     <p><a href="https://github.com/KamilKozicki/megadev-S01E03/issues/1">Engineering ticket: shared parser ignores day-first tenant locales</a></p>

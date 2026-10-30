@@ -13,3 +13,7 @@ The counts use 412 unique report IDs. The export has 427 rows because its pages 
 - Rendered page: [`rendered/kb/incidents/4471/problems/index.html`](rendered/kb/incidents/4471/problems/index.html)
 
 The page is signed as `KamilKozicki`. Its rendered desk reference is `DR-CNQ6-ZBVB`.
+
+## Engineering update
+
+Ticket #4471 closed on 5 October. The parser issue was fixed by `fix(dates): parse dd/mm for eu locales`. The hint issue will not be fixed because `booking-v3` was retired.
